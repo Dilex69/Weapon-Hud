@@ -7,9 +7,8 @@
 ![image](https://i.imgur.com/IPb1O2u.png)
 
 # Dependency
-- qb-core
-- qb-inventory
-
+- [qb-core](https://github.com/qbcore-framework/qb-core)
+- [qb-inventory](https://github.com/qbcore-framework/qb-inventory)
 # Installation
 ```
 - Download Weapon-Hud
