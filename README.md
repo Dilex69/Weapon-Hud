@@ -8,7 +8,7 @@
 
 # Dependency
 - qb-core
-- qb-inventory / For Gun Png
+- qb-inventory
 
 # Installation
 ```
