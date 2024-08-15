@@ -6,7 +6,7 @@
 ```
 - F9 (default) and command /hud
 ```
-![image](https://imgur.com/IPb1O2u)
+![image](https://i.imgur.com/IPb1O2u.png)
 
 # Dependency
 - qb-core
