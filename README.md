@@ -2,7 +2,7 @@
 - A Fivem Weapon HUD  
 
 # Main UI preview
-- Settings
+- preview
 
 ![image](https://i.imgur.com/IPb1O2u.png)
 
