@@ -13,7 +13,7 @@
 # Installation
 ```
 - Download Weapon-Hud
-- Extract
+- Extract To Resources Folder
 - rename to Weapon-Hud
 - ensure Weapon-Hud
 ```
