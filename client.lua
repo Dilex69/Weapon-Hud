@@ -11,20 +11,23 @@ Citizen.CreateThread(function()
         local weaponHash = weaponData and weaponData.name or 'unarmed'
 
         local ammoInWeapon = 0
- 
-        if weaponData then
-            if weaponData.name ~= 'WEAPON_UNARMED' then
-                ammoTotal = GetPedAmmoByType(player, GetHashKey(weaponData.ammotype))
-                _, ammoInWeapon = GetAmmoInClip(player, weapon)
-                
-            end
-        end
+        local ammoTotal = 0
 
-        SendNUIMessage({
-            weapon = weaponName,
-            weaponHash = weaponHash,
-            ammo = ammoInWeapon,
-            ammoTotal = ammoTotal
-        })
+        if weaponData and weaponData.name ~= 'WEAPON_UNARMED' then
+            ammoTotal = GetPedAmmoByType(player, GetHashKey(weaponData.ammotype))
+            _, ammoInWeapon = GetAmmoInClip(player, weapon)
+
+            -- Show UI only if a weapon is equipped
+            SendNUIMessage({
+                display = true,
+                weapon = weaponName,
+                weaponHash = weaponHash,
+                ammo = ammoInWeapon,
+                ammoTotal = ammoTotal
+            })
+        else
+            -- Hide UI if unarmed
+            SendNUIMessage({ display = false })
+        end
     end
 end)
